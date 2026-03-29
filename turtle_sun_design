@@ -1,0 +1,17 @@
+import turtle
+
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+t = turtle.Turtle()
+t.speed(900)
+
+colors = ["red", "yellow", "green", "orange"]
+
+for i in range(1000):
+    t.pencolor(colors[i % len(colors)])  # Cycle through the colors
+    t.forward(500)
+    t.back(500)
+    t.right(1)
+
+turtle.exitonclick()
